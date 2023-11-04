@@ -1,0 +1,15 @@
+<section class="banner">
+	<div class="banner-slider">
+		<div class="slider-item" >
+			<img src="{{imageBaseURL}}w1280{{backdrop_path}}" alt=`${title} class="img-cover">
+
+		</div>
+	</div>
+	<div class="slider-control">
+		<div class="control-inner">
+			<div class="poster-path" *ngFor="let obj of popularMovieArr">
+				<img src="{{imageBaseURL}}w154{{obj.poster_path}}"  class="img-cover" alt="{{obj.title}}" loading="lazy" draggable="false">`
+			</div>
+		</div>
+	</div>
+</section>

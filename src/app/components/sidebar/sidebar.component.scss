@@ -1,14 +1,18 @@
 .sidebar{
-	position: absolute;
-	background-color: var(--background);
-	top: 96px;
-	bottom: 0;
-	left: -340px;
-	max-width: 340px;
-	width: 100%;
-	border-block-start: 1px solid var(--banner-background);
-	overflow-y: overlay;
-	z-index: 4;
-	visibility: hidden;
-	transition: var(--transition-long);
+    position: static;
+    visibility: visible;
+    border-block-start: 0;
+    height: calc(100vh - 104px);
   }
+.movie-list{
+	color: var(--on-surface-variant);
+	cursor: pointer;
+
+	p{
+		font-size: 18px;
+		padding-inline: 20px;
+	}
+}
+.movie-list:hover{
+	color: var(--on-surface);
+}

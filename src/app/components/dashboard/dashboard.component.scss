@@ -1,0 +1,44 @@
+.banner{
+	height: 500px;
+	position: relative;
+    border-radius: var(--radius-24);
+    overflow: hidden;
+}
+.banner-slider{
+	overflow-x: scroll;
+	width: 100%;
+}
+.slider-item{
+		width: 100%;
+		height: 100%;
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+.slider-control{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	right: 0;
+	border-radius: var(--radius-16);
+	user-select: none;
+	padding: 4px 0 4px 4px;
+	overflow-x: auto; 
+  }
+  
+  .slider-control::-webkit-scrollbar{
+	display: none;
+  }
+  
+  .control-inner{
+	display: flex;
+	gap: 12px;
+  }
+  
+  .control-inner::after{
+	content: "";
+	min-width: 12px;
+  }
+  
